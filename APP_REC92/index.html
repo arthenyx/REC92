@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REC92</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</head>
+<body id="odyodyody">
+ 
+    <div id="accueil">
+
+    <div class="container text-center">
+
+        <!-- icones infos + infos --> 
+        <div class="row">
+            <div class="col">
+                <img class="icons" id="iconInfo" onclick="goToPageInfos()" src="images/info.png" alt="">
+            </div>
+
+            <div class="col">
+                <img class="icons" id="iconMap" onclick="goToPageMap()" src="images/map.png" alt="">
+            </div>
+
+            <div class="col">
+                <img class="icons" id="iconIndice" onclick="goToPageIndice()" src="images/indice.png" alt="">
+            </div>
+        </div>
+
+        <!-- cartes -->
+        <div id="menu" class="row align-items-center">
+          <div class="col">
+            <div class= "rectangleCartes" id="rectangleVoisin" onclick="goToCode()"></div>
+            <h3 class="h3-color">LE VOISIN</h3>
+          </div>
+          <div class="col">
+            <div class= "rectangleCartes" id="rectangleBureau"></div>
+            <h3 class="h3-color">LE BUREAU</h3>
+          </div>
+          <div class="col">
+            <div class= "rectangleCartes" id="rectangleCommi"></div>
+            <h3 class="h3-color">LE COMMISSARIAT</h3>
+          </div>
+          <div class="col">
+            <div class= "rectangleCartes" id="rectangleSecte"></div>
+            <h3 class="h3-color">LIEU DE LA SECTE</h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- infos -->
+    <div id="pageInfos">
+        <ul>
+            <li>Explorez et analysez chaque zone afin de résoudre la disparition d'Olivia</li>
+            <li>Débloquez les cartes en entrant la solution des énigmes correspondantes</li>
+            <li>Accédez aux indices avec les bouton "ampoule" en haut à droite de l'écran</li>
+            <li>Accédez au plan des lieux avec le bouton "carte" en haut au milieu de l'écran</li>
+            <li>Les zones présentant un cadenas ne contiennent pas d'énigmes</li>
+          </ul>
+          <br><br>
+        <center><div id="boutonRetour" onclick="goToAccueil()">RETOUR</div></center>
+    </div>
+
+    <!-- indice -->
+    <div id="pageIndice">
+        Etrange cette citation... Peut-être te donne-t-elle un indice sur la façon dont aborder le voisin d'Olivia.
+        <br><br><br>
+        <center><div id="boutonRetour" onclick="goToAccueil()">RETOUR</div></center>
+    </div>
+
+    <!-- carte des lieux -->
+    <div id="pageMap">
+        <img id="carteLieux" src="images/carteDesLieux.png" alt="">
+        <br><br>
+        <center><div id="boutonRetour" onclick="goToAccueil()">RETOUR</div></center>
+    </div>
+
+    <!-- form -->
+    <div id="code">
+
+        <form name="FormVoisin" action="" method="GET">
+          Entrez le code : <br>
+          <input type="text" name="inputbox" value="">
+          <input type="button" name="button" value="Valider" onClick="codeVoisin(this.form)">
+        </form>
+  
+      <br><br>
+      <center><div id="boutonRetour" onclick="goToAccueil()">RETOUR</div></center>
+      </div>
+
+    <!-- code correct-->
+    <div id="codeCorrect">
+        CODE CORRECT
+        <br><br>
+        <center><a href="page-1.html">SUITE</a></center>
+    </div>
+
+    <!-- code incorrect-->
+    <div id="codeIncorrect">
+        CODE INCORRECT
+        <br><br>
+        <center><div id="boutonRetour" onclick="goToAccueil()">RETOUR</div></center>
+    </div>
+
+    </body>
+    </html>

@@ -1,0 +1,158 @@
+/* main */
+.h3-color{
+    color: white;
+}
+
+#odyodyody{
+    background-color: #6B4C3C;
+}
+
+#accueil{
+    margin: 3%;
+}
+
+
+
+
+
+/* icons */
+.icons{
+    height: 100px;
+    width: 100px;
+}
+
+
+
+
+/* page infos */
+#pageInfos{
+    display: none;
+    color: white;
+    font-size: xx-large;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* page indice */
+#pageIndice{
+    display: none;
+    color: white;
+    font-size: xx-large;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* page map */
+#pageMap{
+    display: none;
+    color: white;
+    font-size: xx-large;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#carteLieux{
+    width: 100%;
+}
+
+
+
+/* cartes */
+.rectangleCartes{
+    height: 360px; 
+    width: 240px;
+    border-radius: 15px;
+    border: 2px solid white;
+    background-color: #2F1C1C;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    left: 50%;
+}
+
+/*
+.col{
+    border: 2px solid white;
+}
+*/
+
+.row{
+    margin: 10%;
+    /*border: 2px solid white;*/
+}
+
+
+.carteRecto{
+    height: 360px; 
+    width: 240px;
+    margin: 5%;
+}
+
+.carteVerso{
+    height: 680px; 
+    width: 440px;
+    display: none;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* codes */
+#code{
+    display: none;
+    color: white;
+    font-size: xx-large;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#codeCorrect{
+    display: none;
+    color: white;
+    font-size: xx-large;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#codeIncorrect{
+    display: none;
+    color: white;
+    font-size: xx-large;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* message de fin */
+#messageDeFin{
+    color: white;
+    font-size: xx-large;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
