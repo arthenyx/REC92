@@ -105,7 +105,7 @@ function codeVoisin (form) {
 
 function codeBureau (form) {
     var inputValue = form.inputbox.value;
-    if (form.inputbox.value == "CADRE" || form.inputbox.value == "cadre"){
+    if (form.inputbox.value == "CADRE" || form.inputbox.value == "cadre" || form.inputbox.value == "Cadre"){
         var codeCorrect = document.getElementById("codeCorrect");
         codeCorrect.style.display = "block";
         var code = document.getElementById("code");
@@ -141,7 +141,7 @@ function codeCommi (form) {
 
 function codeSecte (form) {
     var inputValue = form.inputbox.value;
-    if (form.inputbox.value == "ELUE SACRIFIEE" || form.inputbox.value == "élue sacrifiée" || form.inputbox.value == "elue sacrifiee"){
+    if (form.inputbox.value == "ELUE SACRIFIEE" || form.inputbox.value == "élue sacrifiée" || form.inputbox.value == "elue sacrifiee" || form.inputbox.value == "Élue sacrifiée"){
         var codeCorrect = document.getElementById("codeCorrect");
         codeCorrect.style.display = "block";
         var code = document.getElementById("code");
