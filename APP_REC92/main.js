@@ -105,7 +105,7 @@ function codeVoisin (form) {
 
 function codeBureau (form) {
     var inputValue = form.inputbox.value;
-    if (form.inputbox.value == "CADRE" || form.inputbox.value == "cadre" || form.inputbox.value == "Cadre"){
+    if (form.inputbox.value == "N53W75" || form.inputbox.value == "n53w75" || form.inputbox.value == "N53w75"){
         var codeCorrect = document.getElementById("codeCorrect");
         codeCorrect.style.display = "block";
         var code = document.getElementById("code");
